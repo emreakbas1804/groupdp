@@ -1,0 +1,29 @@
+@model Point
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupdp</title>
+    <link rel="stylesheet" href="~/content/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body>
+    @await Html.PartialAsync("_navbar")
+    <div class="container">
+        <div class="row mt-5">
+            <p>
+                Login - Logout puanınız: <span style="font-weight: 800;"> @Model.UserPoint</span> 
+            </p>
+            
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>
